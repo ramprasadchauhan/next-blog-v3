@@ -1,10 +1,9 @@
-import { link } from "fs";
 import Image from "next/image";
 import Link from "next/link";
 import DeleteButton from "./DeleteButton";
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/utils/authOptions";
-// import { authOptions } from "@/app/api/auth/[...nextauth]/route";
+
+import { authOptions } from "@/app/api/auth/[...nextauth]/route";
 
 interface PostProps {
   id: string;

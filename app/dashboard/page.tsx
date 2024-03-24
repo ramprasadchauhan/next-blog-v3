@@ -1,12 +1,11 @@
 import Post from "@/components/Post";
-// import { postData } from "@/data";
+
 import Link from "next/link";
 import React from "react";
 import { getServerSession } from "next-auth";
-// import { authOptions } from "../api/auth/[...nextauth]/route";
+import { authOptions } from "../api/auth/[...nextauth]/route";
 import { redirect } from "next/navigation";
 import { TPost } from "../types";
-import { authOptions } from "@/utils/authOptions";
 
 const getPosts = async (email: string) => {
   try {
